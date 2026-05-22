@@ -4,9 +4,6 @@
 
 # Run and deploy your AI Studio app
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/1d706797-6f6d-4be3-9d60-c0c3f4aeff1c
 
 ## Run Locally
 
@@ -18,3 +15,6 @@ View your app in AI Studio: https://ai.studio/apps/1d706797-6f6d-4be3-9d60-c0c3f
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+=======
+# zyvera-technologies-portfolio
+zyvera technologies Portfolio

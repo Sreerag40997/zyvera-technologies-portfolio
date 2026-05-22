@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ShieldCheck, Target, Eye, Layers, Settings, Users, ArrowUpRight, Cpu } from 'lucide-react';
+import heroImage from '../assets/images/cyber_network_1779357419121.png';
 
 export default function About() {
   const whyChooseUs = [
@@ -77,7 +78,7 @@ export default function About() {
             {/* Newly added tech/coding image for the About Us panel visual reinforcement */}
             <div className="relative rounded-xl overflow-hidden border border-brand-border/80 bg-black shadow-xl">
               <img 
-                src="/src/assets/images/cyber_network_1779357419121.png" 
+                src={heroImage} 
                 alt="Zyvera Cloud Infrastructure Solutions" 
                 className="w-full h-52 sm:h-64 object-cover opacity-85 hover:opacity-100 transition-opacity duration-300"
                 referrerPolicy="no-referrer"

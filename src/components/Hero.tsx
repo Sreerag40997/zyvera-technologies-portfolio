@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Sparkles, Terminal, Code, Cpu, Database, Eye, Globe } from 'lucide-react';
+import heroImage from '../assets/images/tech_coding_1779357396858.png';
 
 export default function Hero() {
   const handleScrollToContact = () => {
@@ -143,7 +144,7 @@ export default function Hero() {
             <div className="relative group overflow-hidden rounded-lg border border-brand-border bg-black mb-4">
               <div className="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent opacity-60 z-10 pointer-events-none" />
               <img 
-                src="/src/assets/images/tech_coding_1779357396858.png" 
+                src={heroImage} 
                 alt="Zyvera Technologies Coding Sandbox" 
                 className="w-full h-auto aspect-[16/9] object-cover hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"

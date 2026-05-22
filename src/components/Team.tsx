@@ -1,6 +1,14 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Github, Linkedin, Cpu, Code, Layers, Mail, Sparkles, Terminal } from 'lucide-react';
+import sreelakshmiImage from '../assets/images/team_sreelakshmi_1779368475439.jpeg';
+import sreeragImage from '../assets/images/team_sreerag_1779368492458.jpeg';
+import akhilImage from '../assets/images/team_akhil_1779368509724.jpeg';
+import amalImage from '../assets/images/team_amal_1779368524311.jpeg';
+import shyamImage from '../assets/images/team_vishnu_1779368583368.jpeg';
+import muneerImage from '../assets/images/team_muneer_1779368565489.jpeg';
+import vishnuImage from '../assets/images/team_vishnu_17793685833688.jpeg';
+import muzammilImage from '../assets/images/team_muzammil_1779368599214.jpeg';
 
 interface TeamMember {
   name: string;
@@ -20,7 +28,7 @@ const teamMembers: TeamMember[] = [
     name: "Sreelakshmi Ajith",
     role: "Founder & Managing Director",
     bio: "Visionary founder leading Zyvera Technologies with a strong focus on business growth, client relationships, operational excellence, and building high-performing teams.",
-    image: "/src/assets/images/team_sreelakshmi_1779368475439.jpeg",
+    image: sreelakshmiImage, 
     experience: "1 Yr Exp",
     skills: [
       "Leadership",
@@ -37,7 +45,7 @@ const teamMembers: TeamMember[] = [
     name: "Sreerag T. M.",
     role: "Senior Full-Stack Developer & Project Coordinator",
     bio: "Experienced full-stack engineer specializing in scalable server-side systems, AWS cloud infrastructure, Go microservices, Docker-based deployments, and high-performance React applications.",
-    image: "/src/assets/images/team_sreerag_1779368492458.jpeg",
+    image: sreeragImage,
     experience: "4 Yrs Exp",
     skills: [
       "Go (Golang)",
@@ -56,7 +64,7 @@ const teamMembers: TeamMember[] = [
     name: "Akhil T. V.",
     role: "UI / UX Developer & Designer",
     bio: "Shaping interactive client portals, high-contrast mockups, responsive vector experiences, and pixel-perfect custom corporate websites.",
-    image: "/src/assets/images/team_akhil_1779368509724.jpeg",
+    image:akhilImage,
     experience: "2 Yrs Exp",
     skills: [
       "Figma",
@@ -73,7 +81,7 @@ const teamMembers: TeamMember[] = [
     name: "Amal Thomas",
     role: "Senior Full-Stack Engineer",
     bio: "Powerhouse engineer building beautiful user-centric web applications and robust database architectures with Python and React.",
-    image: "/src/assets/images/team_amal_1779368524311.jpeg",
+    image: amalImage,
     experience: "3 Yrs Exp",
     skills: [
       "Python",
@@ -91,7 +99,7 @@ const teamMembers: TeamMember[] = [
     name: "Shyam V.",
     role: "Lead Digital Marketing Specialist",
     bio: "Driving global discoverability and analytics-backed search strategies to bring brand solutions to scale across modern digital hubs.",
-    image: "/src/assets/images/team_vishnu_1779368583368.jpeg",
+    image:shyamImage,
     experience: "2 Yrs Exp",
     skills: [
       "SEO Optimization",
@@ -108,7 +116,7 @@ const teamMembers: TeamMember[] = [
     name: "Muneer",
     role: "Full-Stack Developer",
     bio: "Crafting lightweight web apps using modern frameworks and rendering engines to ensure exceptional performance.",
-    image: "/src/assets/images/team_muneer_1779368565489.jpeg",
+    image: muneerImage,
     experience: "3 Yrs Exp",
     skills: [
       "React.js",
@@ -125,7 +133,7 @@ const teamMembers: TeamMember[] = [
     name: "Vishnu",
     role: "Full-Stack Developer",
     bio: "Implementing clean server logic in Python/Django and pairing it with lightning-fast React components.",
-    image: "/src/assets/images/team_vishnu_17793685833688.jpeg",
+    image: vishnuImage,
     experience: "3 Yrs Exp",
     skills: [
       "Python",
@@ -144,7 +152,7 @@ const teamMembers: TeamMember[] = [
     name: "Muzammil C.",
     role: "Junior Full-Stack Developer",
     bio: "Detail-oriented junior engineer assisting in creating elegant user interfaces and developing database queries/routes.",
-    image: "/src/assets/images/team_muzammil_1779368599214.jpeg",
+    image:muzammilImage,
     experience: "1 Yr Exp",
     skills: [
       "Python",

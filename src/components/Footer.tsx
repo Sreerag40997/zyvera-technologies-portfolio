@@ -1,6 +1,14 @@
 import React from 'react';
 import { LogoSymbol } from './Logo';
-import { ArrowUp, Code2, LineChart, Globe, HelpCircle } from 'lucide-react';
+import { 
+  ArrowUp, 
+  Code2, 
+  LineChart, 
+  Facebook, 
+  Instagram, 
+  Linkedin, 
+  Mail 
+} from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -18,22 +26,53 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 pb-12 border-b border-brand-border/60">
           
           {/* Logo & Slogan Column */}
-          <div className="md:col-span-5 space-y-4 text-left">
-            <div className="flex items-center gap-3">
-              <LogoSymbol className="h-8 w-8 text-brand-accent" />
-              <div className="flex flex-col">
-                <span className="font-display text-xl font-bold tracking-wider text-white select-none leading-none">
-                  zyvera
-                </span>
-                <span className="text-[9px] uppercase tracking-[0.25em] text-brand-accent font-semibold leading-none mt-1">
-                  technologies
-                </span>
+          <div className="md:col-span-5 space-y-6 text-left">
+            <div>
+              <div className="flex items-center gap-3">
+                <LogoSymbol className="h-8 w-8 text-brand-accent" />
+                <div className="flex flex-col">
+                  <span className="font-display text-xl font-bold tracking-wider text-white select-none leading-none">
+                    zyvera
+                  </span>
+                  <span className="text-[9px] uppercase tracking-[0.25em] text-brand-accent font-semibold leading-none mt-1">
+                    technologies
+                  </span>
+                </div>
               </div>
+              
+              <p className="text-xs text-brand-muted/80 max-w-sm font-light leading-relaxed mt-4">
+                We specialize in building innovative, scalable, and real-time digital solutions that help businesses grow in the modern world. Turning ideas into successful digital products.
+              </p>
             </div>
-            
-            <p className="text-xs text-brand-muted/80 max-w-sm font-light leading-relaxed">
-              We specialize in building innovative, scalable, and real-time digital solutions that help businesses grow in the modern world. Turning ideas into successful digital products.
-            </p>
+
+            {/* Social Media Links */}
+            <div className="flex items-center gap-5">
+              <a 
+                href="https://www.facebook.com/profile.php?id=61589933740249" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-brand-accent transition-colors duration-300"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://www.instagram.com/zyveratechnologies/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-brand-accent transition-colors duration-300"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a 
+                href="mailto:contact@zyvera.com" 
+                className="hover:text-brand-accent transition-colors duration-300"
+                aria-label="Email"
+              >
+                <Mail className="h-5 w-5" />
+              </a>
+            </div>
 
             <div className="flex items-center gap-1 text-[10px] font-mono tracking-widest text-white/50 uppercase select-none font-medium">
               <span>Digital Solutions</span>
@@ -87,10 +126,10 @@ export default function Footer() {
           <div className="md:col-span-1 flex md:justify-end items-start">
             <button
               onClick={scrollToTop}
-              className="p-3 bg-brand-bg rounded-xl border border-brand-border hover:border-brand-accent hover:text-white transition-colors cursor-pointer"
+              className="p-3 bg-brand-bg rounded-xl border border-brand-border hover:border-brand-accent hover:text-white transition-colors cursor-pointer group"
               aria-label="Back to top"
             >
-              <ArrowUp className="h-4 w-4" />
+              <ArrowUp className="h-4 w-4 group-hover:-translate-y-1 transition-transform" />
             </button>
           </div>
         </div>
